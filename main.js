@@ -1,20 +1,18 @@
-const message  = document.getElementById('message');
+const message= document.getElementById('message');
 
 message.addEventListener('click', bringData);
 
 function bringData(){
-   const httpasync= new XMLHttpRequest();
+   const httpAssync= new XMLHttpRequest();
+   httpAssync.open("GET","ajax_info.txt",true);
 
-   httpAsync.open('GET','archivo.txt',true);
+   httpAssync.onreadystatechange = function(){
+      if (this.readyState == 4 && this.status == 200) {
+         document.querySelector('#answer').innerHTML = this.responseText;
+       }
+   } 
 
-   httpAsync.send();
-
-   httpAsync.onreadystatechange = funcion(){
-      if(this.readyState == 4 && this.status == 200){
-
-      }
-   }
-
+   httpAssync.send();
 
 }
 
