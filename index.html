@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Ajax and Js</title>
 </head>
 <body>
     <div class="container">
         <div class="section">
+            <h1>Consumiendo archivo txt</h1>
             <button class="btn" id="message">Mensaje</button>
         </div>
-        <div class="section" id="answer">
-
-        </div>
+        <div class="section" id="answer"></div>
     </div>
     <div class="container">
+        <h1>Consumiendo archivo JSON</h1>
         <button class="btn" id="btnJson">JSON</button>
-
+        
         <table>
             <thead>
                 <tr>
@@ -29,7 +28,27 @@
             <tbody id="res"></tbody>
         </table>
     </div>
+    <div class="container">
+        <h1>Consumiendo API publica</h1>
+        <div class="section">
+            <button class="btn" id="dolar">Dolar</button>
+            <button class="btn blue" id="uf">Uf</button>
+            <div class="section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Dolar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rest"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
     <script src="main.js"></script>
     <script src="index.js"></script>
+    <script src="coins.js"></script>
 </body>
 </html>
