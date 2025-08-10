@@ -1,0 +1,12 @@
+body {
+  background-color: #fafafa;
+}
+
+.container {
+  margin-top: 48px;
+}
+
+.message-panel {
+  margin-top: 16px;
+  font-size: 1.1rem;
+}

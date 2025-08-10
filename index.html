@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Demostración simple de AJAX con JavaScript y Materialize CSS">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <title>Ajax and Js</title>
+    <title>AJAX con JavaScript</title>
 </head>
 <body>
     <div class="container">
         <div class="section">
-            <button class="btn" id="sectionMessage">Mensaje</button>
+            <button class="btn" id="sectionMessage" aria-label="Cargar mensaje">Mensaje</button>
+            <div id="message" class="card-panel teal lighten-5 message-panel" role="status" aria-live="polite" style="display:none"></div>
         </div>
     </div>
-    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+    <script src="main.js" defer></script>
 </body>
 </html>
